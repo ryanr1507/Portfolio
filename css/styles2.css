@@ -44,13 +44,12 @@ html {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      position: relative;
-      width: 100vw;
+      width: 110vw;
       box-sizing: content-box;
-      background-color:#E4DDDD;
+      position: relative;
+      display: flex;
+      background-color: white;
   }
-
-
 
 
   /* HORIZONTAL SCROLLING GALLERY */
@@ -70,23 +69,23 @@ html {
 
   .project23 {
     position: absolute;
-    left:50%;
+    left:0%;
     top:52%;
     transform: translate(-50%, -50%); 
   }
 
   .myImage {
     position: absolute;
-    right:5%;
+    right:7%;
     bottom: -2%;
-    width:35vw;
+    width:32vw;
   }
 
   .myImageShadow {
     position: absolute;
-    right:5%;
-    bottom: -1%;
-    width: 35vw;
+    right:7%;
+    bottom: -9%;
+    width: 32vw;
     height: 40vh;
     background: linear-gradient(180deg, #ffffff 4.84%, rgba(255, 255, 255, 0) 99.63%);
     transform: rotate(-180deg);
@@ -95,17 +94,17 @@ html {
   .software {
     position: absolute;
     top: 20vh;
-    right: 25vw;
-    width: 35vw;
-    opacity: 0.5;
+    right: 15vw;
+    width: 40vw;
+    opacity: 0.4;
   }
 
   .engineer {
     position: absolute;
     top: 35vh;
-    right: 10vw;
-    width: 35vw;
-    opacity: 0.5;
+    right: 7vw;
+    width: 40vw;
+    opacity: 0.4;
   }
   
  
@@ -145,14 +144,41 @@ html {
   .navbar-dark .navbar-brand {
     color: rgb(0, 0, 0);
   }
+
+  .navbar-dark .navbar-brand:hover {
+    color: rgb(0, 0, 0);
+  }
+
   
   .navbar-dark .navbar-nav .nav-link {
     color: rgb(0, 0, 0);
   }
+
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(0, 0, 0);
+  }
+
   
   .logo {
     width: 2vw;
   }
+
+  .logo2 {
+    position: absolute;
+    left: 16vw;
+    top: 11vh;
+    z-index: 7;
+
+  }
+
+  #logo {
+    position: absolute;
+    left:50vw;
+    top:8vh;
+    transform: translate(-50%, -50%); 
+    z-index: 7;
+}
+  
   
   /**************************** Top Section *************************/
   .top-heading {
@@ -184,8 +210,13 @@ html {
   }
   
   .sonar-emitter .nav-link {
-    height: 75px;
-    width: 75px;
+    height: 15px;
+    width: 45px;
+    position: absolute;
+    top:30%;
+    left: 50%;
+    margin-left: -22px;
+    z-index: 2;
   }
   
   .center {
@@ -234,151 +265,14 @@ html {
   }
   
   /**************************** Middle Section *************************/
-  .middle-section {
-      text-align: center;
-      background: rgb(201, 195, 195);
-      height: auto;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      width: 100%;
-      z-index: -2;
-  }
-
-  .middle-container {
-    background: white;
-    margin: 3% 7% 0;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-
-  .middle-section .specialFont {
-    position: relative;
-    padding-top: 5%;
-    color: rgb(255, 255, 255);
-  }
-
- 
- .white {
-    width: auto; 
-    text-align: center; 
-    border-bottom: 2px solid rgb(255, 255, 255); 
-    line-height: 0.1em;
-    margin: 5% 0 10%; 
-    font-size: 1em;
-  } 
-
-  .white span { 
-    background-color:rgb(201, 195, 195);
-    padding:0 10px; 
-  }
-
-  .card {
-    margin-top: 8%;
-    margin-bottom: 2%;
-    border: black solid 1px;
-  }
-
-  .project-desc {
-    text-align: left;
-    margin-top: 2%;
-  }
+  
 
 
-  .project-skills {
-    display: inline-block;
-    border: solid rgb(0, 0, 0) 2px;
-    padding: 0 5px;
-    margin-top: 1%;
-
-  }
-
-  .col-lg-8 {
-    text-align: left;
-  }
-
-  .btn-outline-primary {
-    color:#000000 ;
-    border-color: #2bcff7;
-    border-width: 2px;
-  }
-
-  .btn-primary {
-    color: black;
-    background-color:#2bcff7 ;
-    border-color: #2bcff7;
-    border-width: 2px;
-  }
-
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    background-color: #43bad8;
-    border-color:#43bad8 ;
-    color: black;
-  }
-
-  .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active, .open>.dropdown-toggle.btn-outline-primary {
-    background-color: #2bcff7;
-    border-color:#2bcff7 ;
-    color: black;
-  }
-
-  .middle-section h2 {
-    margin-top: 5%;
-  }
-
-  .middle-container .row {
-    padding-bottom: 5%;
-  }
-
-  .tester {
-    height: 100vh;
-    background-color: white;
-  }
 
  /**************************** Skills Section *************************/
-  .skills-section {
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    box-sizing: content-box;
-    background: rgb(99, 97, 97);
-  }
-
-  .skills-section .specialFont {
-    padding-top: 5%;
-  }
-
-  .skills-section .h1 {
-    color: rgb(26, 225, 240);
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(26, 225, 240);
-  }
 
   
-  /**************************** Icons *************************/
-  
-  .social-icon {
-    margin-left: 30%;
-    color: #000000;
-    position: absolute;
-  }
 
-  .first-icon {
-    bottom: 64%;
-  }
-
-  .second-icon {
-    bottom: 59%;
-  }
-  
-  .third-icon {
-    bottom: 54%;
-  }
 
   
   /**************************** Sonic Background Section *************************/
@@ -391,48 +285,69 @@ html {
     width: 100%;
     padding: 4rem;
   }
-    
-  /* The circle */
-  .sonar-emitter {
-    position: relative;
-    margin: 0 auto;
-    width: 75px;
-    height: 75px;
-    border-radius: 9999px;
-    border: solid 2px rgb(0, 0, 0);
-  }
   
-  /* the 'wave', same shape and size as its parent */
-  .sonar-wave {
+
+  #section10 a {
+    padding-top: 60px;
+  }
+  #section10 a span {
     position: absolute;
-    top: 9px;
-    left: 9px;
-    width: 75%;
-    height: 75%;
-    border-radius: 100px;
-    background-color: #c4b6b6;
-    opacity: 0;
-    z-index: -1;
-    pointer-events: none;
+    top:35%;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    box-sizing: border-box;
   }
-  
-  /*
-      Animation
-  */
-  .sonar-wave {
-    animation: sonarWave 2s linear infinite;
+  #section10 a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
   }
-  
-  @keyframes sonarWave {
-    from {
-      opacity: 0.4;
+
+  @-webkit-keyframes sdb10 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
     }
-    to {
-      transform: scale(2.7);
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
       opacity: 0;
     }
   }
-  
+  @keyframes sdb10 {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
   
   /**************************** Special Fonts *************************/
   
@@ -507,200 +422,4 @@ html {
 
 
 
-  .loader-17{
-    width : 75px;
-    height: 75px;
-    border-radius: 50%;
-    display: inline-block;
-    border-top:2px solid #FFF;
-    border-bottom:2px solid rgb(255, 255, 255);
-    animation: rotation .5s linear 4, grow 2s linear 1;
-  }
-
-
-  @keyframes grow {
-    0% {width: 75px; height: 75px}
-    50% {width: 250px; height: 250px;}
-    100% {width: 75px; height: 75px;}
-  }
-
-  @keyframes rotation {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  .firstSpan {
-    position: relative;
-    margin: 0 auto;
-  }
-
-  .secondSpan {
-    animation: fade 2s linear 1, circle 3s linear 1;
-    position: absolute;
-    margin: 0 auto;
-  }
-
-  .firstDiv {
-    position: absolute;
-    margin: 0 auto;
-    width : 75px;
-    height: 75px;
-    border-radius: 100%;
-    border:2px solid #FFF;
-    animation: appear 2s linear 1;
-    z-index: 1;
-  }
-
-
-  @keyframes appear {
-    0% { opacity: 0; }
-    99% {opacity: 0;}
-    100% { opacity: 1;}
-  }
-
-
-  @keyframes fade {
-    0% { opacity: 0; }
-    50% { opacity: 0; }
-    100% { opacity: 1;}
-  }
-
-
-  .Ssection {
-    min-width: 800px;
-    width: 33.33%;
-    height: 800px;
-    padding: 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ccc;
-    cursor: pointer;
-    transition: 0.3s linear;
-  }
-
-
-
-
-
-
-
-
-
-
-  /* Type */
-
-  
-/* .line-1{
-  position: relative;
-  top: 52%;  
-  width: 24em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);    
-} */
-
-/* Animation */
-/* .anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite ;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-} */
-
-
-#fade-box {
-  animation: input-entry 3s ease-in; 
-  z-index: 4;
-} 
-
-
-.form { 
-  animation: form-entry 3s ease-in-out; 
-  border-radius: 5px;
-  display: inline-block;
-  height: 220px;
-  margin: 200px auto 0;
-  position: relative;
-  z-index: 4;
-  width: 500px;
-  transition: 1s all ;
-
-} 
-  
-  
-
-    
-
-
-
-
-
-
-
-
-
-@keyframes input-entry {
-  0% {
-    opacity: 0;
-  }	
-  80% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 0.5;
-  }
-  
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes form-entry {
-  0% {
-    height:0;
-    width: 0;
-    opacity: 0;   
-    padding: 0;
-  }	
-  20% {
-    height: 0;
-    border: 1px solid black;
-    width: 0;
-    opacity: 0;  
-    padding: 0; 
-  }	
-  
-  
-  40% {
-    width: 0;
-    height: 220px;
-    border: 6px solid black; 
-    opacity: 1 ; 
-    padding: 0;
-  }
-  
-  70% {
-    border: 6px solid black;
-    box-shadow: 0 0 15px #2bcff7;
-    opacity: 1;
-  }
-
-  100% {
-    height: 220px; 
-    width: 500px;
-    
-  }
-}
+ 
