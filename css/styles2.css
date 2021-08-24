@@ -1,0 +1,706 @@
+html {
+    height: 100%;
+    margin: 0;
+    background-color: white;
+  }
+
+  body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: white;
+  }
+  
+  h3 {
+    text-align: center;
+    padding-top: 2.3rem;
+    font-size: 1rem;
+  }
+
+  h6 {
+    color: rgb(0, 0, 0);
+    margin-top: 4px;
+  }
+  
+
+
+  
+  
+  /**************************** General Sections *************************/
+  
+  .top-section {
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      width: 100vw;
+      box-sizing: content-box;
+      background-color:#ffffff;
+  }
+
+    .top-section2 {
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      width: 100vw;
+      box-sizing: content-box;
+      background-color:#E4DDDD;
+  }
+
+
+
+
+  /* HORIZONTAL SCROLLING GALLERY */
+  .container1 {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    background-color:#ffffff;
+  }
+
+  .project1 {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%); 
+  }
+
+  .project23 {
+    position: absolute;
+    left:50%;
+    top:52%;
+    transform: translate(-50%, -50%); 
+  }
+
+  .myImage {
+    position: absolute;
+    right:5%;
+    bottom: -2%;
+    width:35vw;
+  }
+
+  .myImageShadow {
+    position: absolute;
+    right:5%;
+    bottom: -1%;
+    width: 35vw;
+    height: 40vh;
+    background: linear-gradient(180deg, #ffffff 4.84%, rgba(255, 255, 255, 0) 99.63%);
+    transform: rotate(-180deg);
+  }
+
+  .software {
+    position: absolute;
+    top: 20vh;
+    right: 25vw;
+    width: 35vw;
+    opacity: 0.5;
+  }
+
+  .engineer {
+    position: absolute;
+    top: 35vh;
+    right: 10vw;
+    width: 35vw;
+    opacity: 0.5;
+  }
+  
+ 
+  
+
+  /**************************** Nav Section *************************/
+  .container-fluid.nav-contain {
+    padding: 3% 7% 5%;
+  }
+  
+  .nav-item.nav-selectors {
+    padding-left: 1rem;
+  }
+  
+  .nav-item.nav-checkout {
+    padding: 0;
+  }
+  
+  .nav-link {
+      font-size: 0.9rem;
+      font-family: 'Montserrat', 'Monsieur La Doulaise';
+      font-weight: 300;
+  }
+
+  .navbar.navbar-dark.navbar-expand-lg {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .navbar-brand {
+    font-family: "Open Sans";
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+  }
+  
+  .navbar-dark .navbar-brand {
+    color: rgb(0, 0, 0);
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+  }
+  
+  .logo {
+    width: 2vw;
+  }
+  
+  /**************************** Top Section *************************/
+  .top-heading {
+    font-family: 'Ubuntu', 'Monsieur La Doulaise';
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  .specialFont {
+    font-family: titleFont;
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .container-fluid.row-contain {
+      padding: 3% 12% 7%;
+  }
+  
+  .div-back {
+    position: absolute;
+    top: 40%;
+    width: 50%;
+    
+  }
+  
+  .sonar-emitter .nav-link {
+    height: 75px;
+    width: 75px;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .icon-bar {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+
+  .email {
+    background: #3949dd;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .github {
+    background: #dd1515;
+    color: white;
+  }
+  
+  /**************************** Middle Section *************************/
+  .middle-section {
+      text-align: center;
+      background: rgb(201, 195, 195);
+      height: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      width: 100%;
+      z-index: -2;
+  }
+
+  .middle-container {
+    background: white;
+    margin: 3% 7% 0;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .middle-section .specialFont {
+    position: relative;
+    padding-top: 5%;
+    color: rgb(255, 255, 255);
+  }
+
+ 
+ .white {
+    width: auto; 
+    text-align: center; 
+    border-bottom: 2px solid rgb(255, 255, 255); 
+    line-height: 0.1em;
+    margin: 5% 0 10%; 
+    font-size: 1em;
+  } 
+
+  .white span { 
+    background-color:rgb(201, 195, 195);
+    padding:0 10px; 
+  }
+
+  .card {
+    margin-top: 8%;
+    margin-bottom: 2%;
+    border: black solid 1px;
+  }
+
+  .project-desc {
+    text-align: left;
+    margin-top: 2%;
+  }
+
+
+  .project-skills {
+    display: inline-block;
+    border: solid rgb(0, 0, 0) 2px;
+    padding: 0 5px;
+    margin-top: 1%;
+
+  }
+
+  .col-lg-8 {
+    text-align: left;
+  }
+
+  .btn-outline-primary {
+    color:#000000 ;
+    border-color: #2bcff7;
+    border-width: 2px;
+  }
+
+  .btn-primary {
+    color: black;
+    background-color:#2bcff7 ;
+    border-color: #2bcff7;
+    border-width: 2px;
+  }
+
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color: #43bad8;
+    border-color:#43bad8 ;
+    color: black;
+  }
+
+  .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active, .open>.dropdown-toggle.btn-outline-primary {
+    background-color: #2bcff7;
+    border-color:#2bcff7 ;
+    color: black;
+  }
+
+  .middle-section h2 {
+    margin-top: 5%;
+  }
+
+  .middle-container .row {
+    padding-bottom: 5%;
+  }
+
+  .tester {
+    height: 100vh;
+    background-color: white;
+  }
+
+ /**************************** Skills Section *************************/
+  .skills-section {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    box-sizing: content-box;
+    background: rgb(99, 97, 97);
+  }
+
+  .skills-section .specialFont {
+    padding-top: 5%;
+  }
+
+  .skills-section .h1 {
+    color: rgb(26, 225, 240);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(26, 225, 240);
+  }
+
+  
+  /**************************** Icons *************************/
+  
+  .social-icon {
+    margin-left: 30%;
+    color: #000000;
+    position: absolute;
+  }
+
+  .first-icon {
+    bottom: 64%;
+  }
+
+  .second-icon {
+    bottom: 59%;
+  }
+  
+  .third-icon {
+    bottom: 54%;
+  }
+
+  
+  /**************************** Sonic Background Section *************************/
+  /* Prevent scrollbars to appear when waves go out of bound */
+  .sonar-wrapper {
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    bottom: 0px;
+    width: 100%;
+    padding: 4rem;
+  }
+    
+  /* The circle */
+  .sonar-emitter {
+    position: relative;
+    margin: 0 auto;
+    width: 75px;
+    height: 75px;
+    border-radius: 9999px;
+    border: solid 2px rgb(0, 0, 0);
+  }
+  
+  /* the 'wave', same shape and size as its parent */
+  .sonar-wave {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 75%;
+    height: 75%;
+    border-radius: 100px;
+    background-color: #c4b6b6;
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  /*
+      Animation
+  */
+  .sonar-wave {
+    animation: sonarWave 2s linear infinite;
+  }
+  
+  @keyframes sonarWave {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(2.7);
+      opacity: 0;
+    }
+  }
+  
+  
+  /**************************** Special Fonts *************************/
+  
+  @font-face {
+    font-family: titleFont;
+    src: url(../Fonts/SlimJoe.otf);
+  }
+  
+  
+  
+  /**************************** Responsive Elements *************************/
+  @media (max-width:1200px) {
+    .social-icon {
+      margin-left: calc(30%-20px);
+    }
+  }
+
+
+  @media (max-width:992px) {
+
+      .middle-section {
+        height: auto;
+      }
+
+      .middle-container {
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+      
+      .project-desc { 
+        margin-top: 5%;
+      }
+
+      .middle-section h2 {
+        margin-top: 5%;
+      }   
+
+  }
+  
+  
+  @media (max-width:775px) {
+  
+    .specialFont {
+      font-size: 7vw;
+    }
+  
+    .top-heading {
+      font-size: 3.5vw;
+    }
+  
+    hr {
+      width: 35%;
+    }
+
+    .container-fluid.row-contain {
+      position: static;
+      margin-top: 35%;
+  
+    }
+    .navbar {
+      position: absolute;
+    }
+  }
+  
+  @media (max-width:550px) {
+    
+    .container-fluid.row-contain {
+      position: static;
+      margin-top: 45%;
+    }
+  }
+
+
+
+  .loader-17{
+    width : 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top:2px solid #FFF;
+    border-bottom:2px solid rgb(255, 255, 255);
+    animation: rotation .5s linear 4, grow 2s linear 1;
+  }
+
+
+  @keyframes grow {
+    0% {width: 75px; height: 75px}
+    50% {width: 250px; height: 250px;}
+    100% {width: 75px; height: 75px;}
+  }
+
+  @keyframes rotation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .firstSpan {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .secondSpan {
+    animation: fade 2s linear 1, circle 3s linear 1;
+    position: absolute;
+    margin: 0 auto;
+  }
+
+  .firstDiv {
+    position: absolute;
+    margin: 0 auto;
+    width : 75px;
+    height: 75px;
+    border-radius: 100%;
+    border:2px solid #FFF;
+    animation: appear 2s linear 1;
+    z-index: 1;
+  }
+
+
+  @keyframes appear {
+    0% { opacity: 0; }
+    99% {opacity: 0;}
+    100% { opacity: 1;}
+  }
+
+
+  @keyframes fade {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1;}
+  }
+
+
+  .Ssection {
+    min-width: 800px;
+    width: 33.33%;
+    height: 800px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+
+
+
+
+
+
+
+
+
+
+  /* Type */
+
+  
+/* .line-1{
+  position: relative;
+  top: 52%;  
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+} */
+
+/* Animation */
+/* .anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite ;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+} */
+
+
+#fade-box {
+  animation: input-entry 3s ease-in; 
+  z-index: 4;
+} 
+
+
+.form { 
+  animation: form-entry 3s ease-in-out; 
+  border-radius: 5px;
+  display: inline-block;
+  height: 220px;
+  margin: 200px auto 0;
+  position: relative;
+  z-index: 4;
+  width: 500px;
+  transition: 1s all ;
+
+} 
+  
+  
+
+    
+
+
+
+
+
+
+
+
+
+@keyframes input-entry {
+  0% {
+    opacity: 0;
+  }	
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes form-entry {
+  0% {
+    height:0;
+    width: 0;
+    opacity: 0;   
+    padding: 0;
+  }	
+  20% {
+    height: 0;
+    border: 1px solid black;
+    width: 0;
+    opacity: 0;  
+    padding: 0; 
+  }	
+  
+  
+  40% {
+    width: 0;
+    height: 220px;
+    border: 6px solid black; 
+    opacity: 1 ; 
+    padding: 0;
+  }
+  
+  70% {
+    border: 6px solid black;
+    box-shadow: 0 0 15px #2bcff7;
+    opacity: 1;
+  }
+
+  100% {
+    height: 220px; 
+    width: 500px;
+    
+  }
+}
