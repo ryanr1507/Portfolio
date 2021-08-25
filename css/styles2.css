@@ -78,30 +78,33 @@ html {
     position: absolute;
     right:7%;
     bottom: -2%;
-    width:32vw;
+    width:35vw;
   }
 
   .myImageShadow {
     position: absolute;
     right:7%;
     bottom: -9%;
-    width: 32vw;
-    height: 40vh;
-    background: linear-gradient(180deg, #ffffff 4.84%, rgba(255, 255, 255, 0) 99.63%);
+    width: 35vw;
+    height: 46vh;
+    /* background: linear-gradient(180deg, #ffffff 4.84%, rgba(255, 255, 255, 0) 99.63%); */
+    background: linear-gradient(180deg, #FFFFFF 0.07%, rgba(255, 255, 255, 0.48) 43.38%, rgba(255, 255, 255, 0) 97.25%);
     transform: rotate(-180deg);
   }
 
   .software {
     position: absolute;
     top: 20vh;
-    right: 15vw;
+    left: 10vw;
+    /* right: 15vw; */
     width: 40vw;
     opacity: 0.4;
   }
 
   .engineer {
     position: absolute;
-    top: 35vh;
+    /* top: 35vh; */
+    top: 17vh;
     right: 7vw;
     width: 40vw;
     opacity: 0.4;
@@ -184,17 +187,18 @@ html {
   .top-heading {
     font-family: 'Ubuntu', 'Monsieur La Doulaise';
     font-weight: 200;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     color: rgb(0, 0, 0);
-    text-align: center;
+    /* text-align: center; */
   }
 
   .specialFont {
     font-family: titleFont;
-    font-size: 4.2rem;
-    text-transform: uppercase;
-    text-align: center;
+    /* font-size: 4.2rem; */
+    font-size: 2.7rem;
+    /* text-transform: uppercase; */
+    /* text-align: center; */
     color: rgb(0, 0, 0);
   }
   
@@ -204,9 +208,10 @@ html {
   
   .div-back {
     position: absolute;
-    top: 40%;
-    width: 50%;
-    
+    top: 45vh;
+    /* width: auto; */
+    width: 40vw;
+    left:10vw;
   }
   
   .sonar-emitter .nav-link {
@@ -249,24 +254,13 @@ html {
     background-color: #000;
   }
 
-  .email {
-    background: #3949dd;
-    color: white;
-  }
-  
-  .linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .github {
-    background: #dd1515;
-    color: white;
-  }
+
   
   /**************************** Middle Section *************************/
   
-
+.buttons {
+  margin-top: 2vh;
+}
 
 
  /**************************** Skills Section *************************/
