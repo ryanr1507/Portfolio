@@ -44,7 +44,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 110vw;
+    width: 100vw;
     box-sizing: content-box;
     position: relative;
     display: flex;
@@ -52,8 +52,8 @@ html {
     z-index: 3;
   }
 
-  .skills-section {
-    height: 100vh;
+  /* .rotate-section {
+    height: 40vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,8 +61,7 @@ html {
     width: 100vw;
     box-sizing: content-box;
     background-color:#ffffff;
-    background-image: url(/Images/Desktop\ -\ 9.png);
-  }
+  } */
 
   .contact-section {
     height: 100vh;
@@ -73,13 +72,12 @@ html {
     width: 100vw;
     box-sizing: content-box;
     background-color:#ffffff;
-    background-image: url(/Images/Desktop\ -\ 10.png);
   }
 
 
   /* HORIZONTAL SCROLLING GALLERY */
   .container1 {
-    width: 330%;
+    width: 200%;
     height: 100%;
     display: flex;
     background-color:#ffffff;
@@ -90,17 +88,28 @@ html {
     left:50%;
     top:50%;
     transform: translate(-50%, -50%); 
+    height: 65vh;
+  }
+
+  .holder {
+    position: absolute;
+    left:61%;
+    top:38%;
+    transform: translate(-50%, -50%);
+    height:55vh ;
   }
 
   .project23 {
     position: absolute;
+    height: 65vh;
     left:0%;
-    top:53%;
+    top:50%;
     transform: translate(-50%, -50%); 
   }
 
   .myImage {
     position: absolute;
+    padding-left: 5vw;
     right:7%;
     bottom: -2%;
     width:35vw;
@@ -136,74 +145,6 @@ html {
     opacity: 0.4;
   }
 
-  .icon-size {
-    position: absolute;
-    width: 5vw;
-  }
-
-  .icons {
-    position: absolute;
-    width: 100%;
-    height: 12%;
-    animation: myanimation 60s infinite linear;
-    z-index: 4;
-    bottom: 5vh;
-    left: 1vw;
-  }
-
-  .icons2 {
-    position: absolute;
-    width: 100%;
-    height: 12%;
-    animation: myanimation2 60s infinite linear;
-    z-index: 4;
-    bottom: 5vh;
-    left: 1vw;
-  }
-
-  .js {left:0%;}
-
-  .vba {left: 8.33%;}
-
-  .vb {left: 16.66%;}
-
-  .htmlIcon {left:24.99%;}
-
-  .vbsIcon {left:33.32%;}
-
-  .sql {left:41.65%;}
-
-  .react {left:49.98%;}
-
-  .nodeJS {left:58.31%;}
-
-  .figma {left:66.64%;}
-
-  .cssIcon {left:74.97%;}
-
-  .android {left:83.3%;}
-
-  .java {left:91.63%;}
-  
-  @keyframes myanimation
-  {
-      0% {
-          left: 0%;
-      }
-      100% {
-          left: 100%;
-      }
-  }
-
-  @keyframes myanimation2
-  {
-      0% {
-          left: -100%;
-      }
-      100% {
-          left: 0%;
-      }
-  }
   
 
   /**************************** Nav Section *************************/
@@ -264,7 +205,6 @@ html {
     left: 16vw;
     top: 11vh;
     z-index: 7;
-
   }
 
   #logo {
@@ -367,7 +307,6 @@ html {
   width:120px;
 }
 
- /**************************** Skills Section *************************/
 
   
 
@@ -456,71 +395,243 @@ html {
   
   
   
-  /**************************** Responsive Elements *************************/
-  @media (max-width:1200px) {
-    .social-icon {
-      margin-left: calc(30%-20px);
-    }
+  /**************************** Skills Section *************************/
+
+  .about-section {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    box-sizing: content-box;
+    background-color:#ffffff;
+  }
+
+  #about-section .container {
+    padding-top: 7vh;
+  }  
+
+
+  #about-section .specialFont {
+    font-size: 5vh;
+    text-align: center;
+    padding-bottom: 13vh;
+  }
+
+  #about-section .box{
+    margin-top: 2vh;
+  }
+
+  .custom-hr {
+    position: relative;
+    margin: 0 auto;
+    border-top: 3px solid #e91e63;
+    width: 10vw;
+  }
+
+  #about-section .contact-info {
+    margin-bottom: 20px;
+    text-align: center;
   }
 
 
-  @media (max-width:992px) {
-
-      .middle-section {
-        height: auto;
-      }
-
-      .middle-container {
-        margin-left: 15%;
-        margin-right: 15%;
-      }
-      
-      .project-desc { 
-        margin-top: 5%;
-      }
-
-      .middle-section h2 {
-        margin-top: 5%;
-      }   
-
-  }
-  
-  
-  @media (max-width:775px) {
-  
-    .specialFont {
-      font-size: 7vw;
-    }
-  
-    .top-heading {
-      font-size: 3.5vw;
-    }
-  
-    hr {
-      width: 35%;
-    }
-
-    .container-fluid.row-contain {
-      position: static;
-      margin-top: 35%;
-  
-    }
-    .navbar {
-      position: absolute;
-    }
-  }
-  
-  @media (max-width:550px) {
-    
-    .container-fluid.row-contain {
-      position: static;
-      margin-top: 45%;
+  @media (min-width: 1200px){
+      .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 75vw;
     }
   }
 
+  .contact-info .col-md-4 {
+    margin-right: 0;
+  }
 
-  
+  .card {
+    width:100%;
+    min-height:40vh;
+    background:#fff;
+    box-shadow:0 20px 50px rgba(0,0,0,.1);
+    border-radius:10px;
+    transition:0.5s;
+  }
+  .card:hover {
+      box-shadow:0 30px 70px rgba(0,0,0,.2);
+  }
+  .card .box {
+      position:absolute;
+      left:0;
+      text-align:center;
+      padding:20px;
+      box-sizing:border-box;
+      width:100%;
+  }
+
+
+.card .box ul li:hover a {
+    color:#e91e63;
+    transform:rotateY(360deg);
+}
+
+.coverup {
+  position: absolute;
+  left: 0;
+  height: 25vh;
+  width: 12vw;
+  z-index: 5;
+  background-color: white;
+  bottom: 0;
+}
+
+.coverup2 {
+  position: absolute;
+  right: 0;
+  height: 25vh;
+  width: 12vw;
+  z-index: 5;
+  background-color: white;
+  bottom: 0;
+}
+
+.icon-size {
+  position: absolute;
+  width: 5vw;
+}
+
+.icons {
+  position: absolute;
+  width: 100%;
+  height: 12%;
+  animation: myanimation 50s infinite linear;
+  z-index: 4;
+  bottom: 9vh;
+  left: 1vw;
+}
+
+.icons2 {
+  position: absolute;
+  width: 100%;
+  height: 12%;
+  animation: myanimation2 50s infinite linear;
+  z-index: 4;
+  bottom: 9vh;
+  left: 1vw;
+}
+
+.js {left:0%;}
+
+.vba {left: 8.33%;}
+
+.vb {left: 16.66%;}
+
+.htmlIcon {left:24.99%;}
+
+.vbsIcon {left:33.32%;}
+
+.sql {left:41.65%;}
+
+.react {left:49.98%;}
+
+.nodeJS {left:58.31%;}
+
+.figma {left:66.64%;}
+
+.cssIcon {left:74.97%;}
+
+.android {left:83.3%;}
+
+.java {left:91.63%;}
+
+.programming {
+  position: relative;
+  margin:0 auto;
+  top: -6vh;
+}
+
+@keyframes myanimation
+{
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes myanimation2
+{
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
 
 
 
  
+/**************************** Contact Section *************************/
+#contact-section .specialFont {
+  font-size: 5vh;
+  text-align: center;
+  padding-bottom: 7vh;
+}
+
+
+#contact-section .container {
+  padding-top: 7vh;
+}
+
+#contact-section .contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact-section .contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #f82249;
+}
+
+#contact-section .contact-info address, #contact .contact-info p {
+  margin-bottom: 0;
+  color: #000000;
+}
+
+#contact-section .contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+#contact-section .btn-color {
+  background-color: #f82249;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  #contact-section .contact-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+}
+
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: black;
+  height: 15vh;
+  text-align: center;
+}
+
+.social-icon {
+  margin: 40px 10px 20px 10px;
+}
+
+
