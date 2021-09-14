@@ -53,7 +53,7 @@ html {
 
   @keyframes up {
     from {opacity: 0; }
-    to {opacity: 0.8;}
+    to {opacity: 1;}
   }
 
   @keyframes down {
@@ -80,11 +80,12 @@ html {
     z-index: 5;
   }
 
-  .phonepicture {
+  .bookshop {
     position: absolute;
-    left: 55%;
-    top: -6%;
-    width: 40%;
+    left: 34%;
+    top: 15%;
+    width: 65%;
+    z-index: 5;
   }
 
   .cmm {
@@ -93,16 +94,11 @@ html {
     top:50%;
     transform: translate(-50%, -50%);
     width: 60%;
+    z-index: 5;
   }
 
   .project {
     width: 100%;
-  }
-
-
-  .carddiv {
-    width: 100%;
-    height: 100%;
   }
   
   .blackproject {
@@ -344,14 +340,6 @@ html {
   }
 
 
-
-
-  .skills-section .specialFont {
-    position: absolute;
-    top: 6vh;
-    left:50%;
-    transform: translate(-50%, -50%); 
-  }
   
   .container-fluid.row-contain {
       padding: 3% 12% 7%;
@@ -395,11 +383,10 @@ html {
   /**************************** Middle Section *************************/
 
   #middle .section-title {
-    padding-top: 100px;
-    margin-bottom: 40px;
+    padding-top: 80px;
+    margin-bottom: 60px;
   }
 
-  
 
   .left-align {
     margin-top: 2vh;
@@ -508,7 +495,7 @@ html {
   padding-top: 11vh;
 }  
 
-.about-container .section-title {margin-bottom: 20px;}
+.about-container .section-title {margin-bottom: 60px;}
 
 
 #about-section .specialFont {
@@ -764,6 +751,11 @@ html {
   background: #fc8129;
 }
 
+input[type="button"] {
+  border: none;
+  outline: none;
+}
+
 
 .section-title {
   padding-bottom: 40px;
@@ -843,44 +835,77 @@ html {
   background-color: white;
 }
 
-p {margin: 0;}
+#content2 .section-title {
+  padding-top: 40px;
+  padding-left: 15px;
+}
+
+p {margin-bottom: 0;}
 
 #project-page.container-fluid {padding: 0; width: 100%; opacity: 0; animation: up 1s ease 1s both;}
+#project-page.holderproject.container-fluid {padding: 0; width: 100%; opacity: 0; animation: up 1s ease 1s both;}
+
+#project-page, #project-page.holderproject  {
+  min-height: 100vh;
+}
+
+#project-page.warboardpage ul {margin-left: 40px;}
+
+#project-page.container-fluid {padding: 0;}
+#project-page.holderproject.container-fluid {padding: 0;}
 
 #project-page .container {min-width: 85%;}
+#project-page.holderproject .container {min-width: 85%;}
 
-#project-page  .specialFont {
-    font-size: 5vh;
-    text-align: center;
-    padding-bottom: 9vh;
-}
 
-.custom-hr {
-    position: relative;
-    margin: 0 auto;
-    border-top: 3px solid #FF914D;
-    width: 250px;
-}
-  
-#project-page .project-heading {
-    padding-top: 75px;
+.project-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.videoDiv.col-lg-6 {
-    align-items: center;
+.informationRow {
+  margin-top: 30px;
 }
+.holderRow {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.listh2 {margin-left: 40px;}
 
 .myVideo {
-    width: 100%;
-    height: 22vw;
-    padding: 0 20px;
+  width: 100%;
+  padding-left: 23%;
+  padding-right: 23%;
+}
+
+.myVideo2 {
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.bookShopButtons { 
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.liveDemobtn, .viewCodebtn {
+  margin: 0 10px;
+}
+
+.myImageHolder {
+  width: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .techbox {
-    border: 1px black solid;
-    padding: 2px 8px;
-    margin-right: 10px;
-    margin-bottom: 5px;
+  border: 1px black solid;
+  padding: 2px 8px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .close {
@@ -900,8 +925,37 @@ p {margin: 0;}
   top: 50%;
   left:50%;
   transform: translate(-50%, -50%); 
+} 
+
+@media (max-width: 1200px) {#project-page .myVideo{padding: 0 10% }}
+
+/* Media max width 992 for warboard project */
+@media (max-width: 992px) {
+  #project-page p{font-size: small;}
+  #project-page ul {font-size: small;}
+  #project-page .myVideo{padding: 0 5%}
+  #project-page h2 {font-size: x-large;}
+  #project-page .project:nth-child(1) {margin-top: 15px;}
+  #project-page .section-title p {font-size: 25px;}
+  #project-page .section-title h2 {font-size: 10px;}
+  #project-description {text-align: center;}
+
+  #project-page.holderproject .project {margin-top: 25px;}
+  #project-page.holderproject .section-title {padding-bottom: 0px;}
+  .myVideo2 {padding: 0 7%;}
+  .projectT { justify-content: center;}
+  .listh2 {margin: 0 auto;}
+  h2 {margin: 0 auto;}
+}
+
+@media (max-width: 690px) {
+  #project-page.holderproject p{font-size: small;}
+  #project-page.holderproject ul {font-size: small;}
+  #project-page.holderproject .myVideo2{padding: 0;}
+  #project-page.holderproject h2 {font-size: x-large;}
+  #project-page.holderproject .section-title p {font-size: 25px;}
+  #project-page.holderproject .section-title h2 {font-size: 10px;}
 }
 
 
-
-
+@media (max-width: 580px) {p{padding: 0 15px }}
