@@ -68,7 +68,7 @@ html {
 
   @keyframes small {
     from {height: 100vh; width: 100%;}
-    to {height: 0; width: 0;}
+    to {height: 0; width: 0; }
   }
 
   .holder {
@@ -161,6 +161,7 @@ html {
     z-index: 1;
   }
 
+  @media (max-width: 1350px) {#myImage {width:75vh; right:2%} #myImageShadow {width:70vh; right:2%}} 
   @media (max-width: 1200px) {#myImage {width:65vh; right:2%} #myImageShadow {width:60vh; right:2%}} 
   @media (max-width: 1100px) {#myImage {width:60vh; right:2%} #myImageShadow {width:55vh; right:2%}} 
 
@@ -842,8 +843,11 @@ input[type="button"] {
 
 p {margin-bottom: 0;}
 
-#project-page.container-fluid {padding: 0; width: 100%; opacity: 0; animation: up 1s ease 1s both;}
-#project-page.holderproject.container-fluid {padding: 0; width: 100%; opacity: 0; animation: up 1s ease 1s both;}
+.noDisplay {display: none;}
+
+
+#project-page.container-fluid {padding: 0; width: 100%; opacity: 0; animation: up 0.5s ease both;}
+#project-page.holderproject.container-fluid {padding: 0; width: 100%; opacity: 0; animation: up 0.5s ease both;}
 
 #project-page, #project-page.holderproject  {
   min-height: 100vh;
